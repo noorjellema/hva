@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Verhalensite</title>
+        <link rel="stylesheet" href="styles/stylegrid.css">
+        <script type="text/javascript" src="java.js"></script>
+        <meta name="viewport" content="witdth=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1><a href="index.html"><img src="images/witbeeldmerk.png" alt="U-OV logo"></a>Verhalen</h1>
+                <ul>
+                    <li><a href="profiel.html">Mijn profiel <img src="images/profile.png" alt="profiel"></a></li>
+                </ul>
+            </nav>
+
+            <section>
+
+            <button type="button" onclick="myFunction()" id="openklappen">&#128269; Wat wil je lezen?</button>
+            <section id="filter">
+                    <div>
+                <h4>Filteren</h4>
+
+                    <h5>Emotie</h5>
+                    <label for="angst">
+                    <input type="checkbox" id="angst" value="16">
+                    angst <span>16</span></label>
+
+
+                    <label for="schaamte">
+                    <input type="checkbox" id="schaamte" value="5" >
+                    schaamte <span>5</span></label>
+
+
+                    <label for="woede">
+                    <input type="checkbox" id="woede" value="11">
+                    woede <span>11</span></label>
+
+
+                    <label for="verrassing">
+                    <input type="checkbox" id="verrassing" value="12" >
+                    verrassing <span>12</span></label>
+
+
+                    <label for="vreugde">
+                    <input type="checkbox" id="vreugde" value="29">
+                    vreugde <span>29</span></label>
+
+                    <label for="verdriet">
+                    <input type="checkbox" id="verdriet" value="18">
+                    verdriet <span>18</span></label>
+
+                    <label for="walging">
+                    <input type="checkbox" id="walging" value="9">
+                    walging <span>9</span></label>
+                    </div>
+
+                    <div>
+                    <h5>Leesduur</h5>
+                    <div class="slidercontainer">
+                    <input type="range" value="4" name="minuten" min="1" max="7" class="slider" id="leestijd">
+                    <p>0 tot <span id="minuten"></span> minuten</p>
+                    </div>
+                    </div>
+
+                    <div>
+                <h4>Sorteren</h4>
+                    <label for="nieuw-oud">
+                    <input type="radio" name="sort">
+                    nieuw - oud</label>
+                    <label for="meest bekeken">
+                    <input type="radio" name="sort">
+                    meest bekeken</label>
+                    <label for="meest geliked">
+                    <input type="radio" name="sort">
+                    meest geliked</label>
+                    </div>
+
+                    <button id="toepassen"><a href="resultaten">TOEPASSEN</a></button>
+            </section>
+        </section>
+
+        </header>
+    <h1>3 resultaten</h1>
+    <main class="grid-container">
+
+        <section>
+
+            <article>
+                <img src="images/article.thumbnails/johancruijff.thumb.png" alt="thumbnail Johan Cruijff"/>
+                <div>
+                    <h2>Johan Cruijff</h2>
+                    <button>
+                        <img src="images/bookmarkleeg.svg" alt="niet opgeslagen" class=boekenlegger onclick="veranderBoek">
+                    </button>
+                 </div>
+                 <footer><a href="verhaal.1.html">
+                     <ul>
+                        <li>9 januari 2019</li>
+                        <li>Angst, Verward</li>
+                        <li>3 minuten</li>
+                        <li>140x gelezen</li>
+                        <li>43 likes</li>
+                     </ul>
+                     </a></footer>
+            </article>
+
+            <article>
+                <img src="images/article.thumbnails/alzheimer.thumb.png" alt="thumbnail Alzheimer"/>
+                <div>
+                    <h2>Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’</h2>
+                    <button>
+                    <img src="images/bookmarkleeg.svg" alt="niet opgeslagen" class=boekenlegger onclick="veranderBoek">
+                    </button>
+                </div>
+                <footer>
+                     <ul>
+                        <li>6 januari 2019</li>
+                        <li>Angst, Verward</li>
+                        <li>2 minuten</li>
+                        <li>567x gelezen</li>
+                        <li>23 likes</li>
+                    </ul>
+                </footer>
+            </article>
+
+
+            <article>
+                <img src="images/article.thumbnails/charliesheen.thumb.png" alt="thumbnail Charlie Sheen"/>
+                <div>
+                     <h2>Charlie Sheen</h2>
+                    <button>
+                    <img src="images/bookmarkleeg.svg" alt="niet opgeslagen" id=boekenlegger onclick="veranderBoek">
+                    </button>
+                </div>
+                <footer>
+                     <ul>
+                        <li>2 januari 2019</li>
+                        <li>Angst, Verward</li>
+                        <li>4 minuten</li>
+                        <li>178x gelezen</li>
+                        <li>69 likes</li>
+                    </ul>
+                </footer>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Noor Jellema x U-OV &copy; 2018</p>
+    </footer>
+
+</body>
+</html>
